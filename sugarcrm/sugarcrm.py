@@ -195,7 +195,9 @@ class Sugarcrm:
     # @param deleted Set True to include deleted records
     # @return [result_count, next_offset, entry_list, relationship_list] 
     def get_entry_list(self, module_name, query = "", order_by = "", offset = 0, select_fields = [], link_name_to_fields_array = []):
-        args = [self.id, module_name, query, order_by, offset, select_fields, link_name_to_fields_array]
+        max_results = "50"
+        deleted = "0"
+        args = [self.id, module_name, query, order_by, offset, select_fields, link_name_to_fields_array, max_results, deleted]
         return self.sendRequest('get_entry_list', args)
 
     ## set_entry

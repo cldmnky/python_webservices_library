@@ -9,7 +9,7 @@ import os
 #from setuptools import setup, find_packages
 from distutils.core import setup
 
-version = '0.1.0'
+version = '0.1.2-redbridge'
 
 PACKAGES = ['sugarcrm'] #,'sugarcrm.Sugarcrm','sugarcrm.sugarbean']
             
